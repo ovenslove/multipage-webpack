@@ -4,9 +4,19 @@
     src: url('../../public/fonts/zkkh.ttf');
 }
 
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     background: #333;
+    height: 100%;
+    width: 100%;
     background: url('../../public/images/logo.png');
     display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: testfont;
+    font-size: 100px;
 }
