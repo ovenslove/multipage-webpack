@@ -1,0 +1,12 @@
+@import '../includes/reset.scss';
+@font-face {
+    font-family: testfont;
+    src: url('../../public/fonts/zkkh.ttf');
+}
+
+body {
+    background: #333;
+    background: url('../../public/images/logo.png');
+    display: flex;
+    font-family: testfont;
+}
