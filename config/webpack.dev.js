@@ -10,17 +10,18 @@ let config = Merge(CommonConfig, {
         filename: 'js/[name].bundle.js',
         path: path.resolve(__dirname, '../dist')
     },
-    plugins: [
-        new ExtractTextPlugin({
-            filename: '[hash].css',
-            allChunks: true
-        })
-    ],
+
     devtool: 'source-map',
     devServer: {
         host: "127.0.0.1",
         contentBase: 'dist',
         port: 8080
-    }
+    },
+    plugins: [
+        new ExtractTextPlugin({
+            filename: '[hash].css',
+            allChunks: true
+        })
+    ]
 });
 module.exports = config;
